@@ -1,0 +1,32 @@
+{
+    "name": "YouTube AdBlocker",
+    "version": "1.1",
+    "description": "Blocks YouTube ads and trackers",
+    "manifest_version": 3,
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback"
+    ],
+    "host_permissions": [
+        "*://*.youtube.com/*",
+        "*://*.googlevideo.com/*",
+        "*://*.doubleclick.net/*",
+        "*://*.googleadservices.com/*",
+        "*://*.googlesyndication.com/*",
+        "*://*.2mdn.net/*",
+        "*://*.aniview.com/*",
+        "*://*.pubmatic.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "icons/logo_16x16.png",
+        "48": "icons/logo_48x48.png",
+        "128": "icons/logo_128x128.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "YouTube AdBlocker"
+    }
+}
